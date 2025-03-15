@@ -13,6 +13,8 @@ app.use(express.json());
 // Routes
 const userRoutes = require("./routes/userRoutes");
 app.use("/api/users", userRoutes);
+const queueRoutes = require("./routes/queueRoutes");
+app.use("/api/queue", queueRoutes);
 
 // Basic Route
 app.get("/", (req, res) => {
